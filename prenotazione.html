@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Bar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/prenotazione.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/prenotazione.css">
+</head>
+<body id="page-top">
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#page-top">
+          <img class="animate__animated animate__tada" src="../img/logo.png" width="90px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="spazioNav"></div>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a id="default" class="nav-link active" aria-current="page" href="#page-top">PRENOTA</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">CONTATTI</a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <h1 class="reveal">MyPrenota!</h1> 
+      <p  class="reveal">
+        Compila il form per vedere e scegliere i tavoli disponibili direttemente sulla mappa!
+      </p>
+      <!--Form prenotazione-->
+      <div class="row">
+        <div class="col-lg-7 prenotazione-col reveal">
+          <form class="row g-3" id="myForm" name="myFormName">
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome: *</label>
+              <br>
+              <input type="text" class="form-control" name="nome" id="nome">
+            </div>
+            <div class="col-md-6">
+              <label for="cognome" class="form-label">Cognome: *</label>
+              <br>
+              <input type="text" class="form-control" name="cognome" id="cognome">
+            </div>
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Telefono: *</label>
+              <br>
+              <input type="text" class="form-control" name="telefono" id="telefono">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">e-mail:</label>
+              <br>
+              <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3">
+              <label for="data">Data:</label>
+              <select class="form-select" name="data" id="data">
+                <option selected>01/06</option><option>02/06</option>
+                <option>03/06</option><option>04/06</option><option>05/06</option>
+                <option>06/06</option><option>07/06</option><option>08/06</option><option>09/06</option>
+                <option>10/06</option><option>11/06</option><option>12/06</option><option>13/06</option>
+                <option>14/05</option><option>15/05</option>
+              </select>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-3">
+              <label for="ora">Ora:</label>
+              <select class="form-select" name="ora" id="ora">
+                <option selected>19:00</option><option>20:30</option><option>22:00</option>
+                <option>23:30</option>
+              </select>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-6" id="reset-btn">
+              <button type="reset" class="my-btn" id="reset-btn">Reset</button>
+            </div>
+            <div class="col-6" id="prenota-btn">
+              <button type="button" class="my-btn" id="dispo-btn">Mostra tavoli</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 prenotazione-col">
+          <!--PIANTINA-->
+          <div id="piant_1" class="piantina blur">
+            <div class="row">
+              <div class="col-3"><div class="rett-vert zoom"></div></div>
+              <div class="col-3"></div>
+              <div class="col-3"><div class="rett-oriz zoom"></div></div>
+              <div class="col-3"><div class="rett-oriz zoom"></div></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><div class="rett-vert zoom"></div></div>
+              <div class="col-3"></div>
+              <div class="col-3"><div class="cerc zoom"></div></div>
+              <div class="col-3"><div class="cerc zoom"></div></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><div class="rett-vert zoom"></div></div>
+              <div class="col-3"></div>
+              <div class="col-3"><div class="cerc zoom"></div></div>
+              <div class="col-3"><div class="cerc zoom"></div></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><div class=" rett-oriz zoom"></div></div>
+              <div class="col-3"></div>
+              <div class="col-6"><div class="bancone zoom"><span>BANCONE</span></div></a></div>
+            </div>
+          </div>
+          <div id="piant_2" class="piantina">
+            <div class="row">
+              <div class="col-3"><a href="#"><div class="tavolo1 rett-vert active"><span>1</span></div></a></div>
+              <div class="col-3"></div>
+              <div class="col-3"><a href="#"><div class="tavolo2 rett-oriz active"><span>2</span></div></a></div>
+              <div class="col-3"><a href="#"><div class="tavolo3 rett-oriz active"><span>3</span></div></a></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><a href="#"><div class="tavolo4 rett-vert active"><span>4</span></div></a></div>
+              <div class="col-3"></div>
+              <div class="col-3"><a href="#"><div class="tavolo5 cerc active"><span>5</span></div></a></div>
+              <div class="col-3"><a href="#"><div class="tavolo6 cerc active"><span>6</span></div></a></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><a href="#"><div class="tavolo7 rett-vert active"><span>7</span></div></a></div>
+              <div class="col-3"></div>
+              <div class="col-3"><a href="#"><div class="tavolo8 cerc active"><span>8</span></div></a></div>
+              <div class="col-3"><a href="#"><div class="tavolo9 cerc active"><span>9</span></div></a></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><a href="#"><div class="tavolo10 rett-oriz active"><span>10</span></div></a></div>
+              <div class="col-3"></div>
+              <div class="col-6"><div class="bancone"><span>BANCONE</span></div></a></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </main>
+  <!--Footer-->
+  <footer class="bg-dark text-center text-white">
+    <hr>
+    <div class="container p-4">
+      <section class="mb-4">
+        <h5>Seguici sui nostri Social Network, ti aspettiamo!</h5>
+      </section>
+      <!-- Sezione Social -->
+      <section class="mb-4 footer-icon">
+        <a class="btn m-1" href="#!" id="immagini_doppie">
+          <img src="../img/fb_yellow.png" width="50%" id="no-hover">
+          <img src="../img/fb-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1" href="#!" id="immagini_doppie">
+          <img src="../img/ig_yellow.png" width="50%" id="no-hover">
+          <img src="../img/ig-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1" href="#!" id="immagini_doppie">
+          <img src="../img/tw_yellow.png" width="50%" id="no-hover">
+          <img src="../img/tw-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1" href="#!" id="immagini_doppie">
+          <img src="../img/tr_yellow.png" width="50%" id="no-hover">
+          <img src="../img/tr-original.png" width="50%" id="mouse-hover">
+        </a>
+      </section>
+    </div>
+    <!-- 
+    <div class="row container-fluid" id="footer-text">
+      <div class="col-lg-6">
+        © 2022 Copyright:
+        <a class="text-white" >AleBiaggio Cirus</a>
+      </div>
+      <div class="col-lg-6">
+        Sei un admin? Effettua il <a href="login.html">Login</a>   
+      </div>
+    </div> 
+    -->
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500});
+  
+    ScrollReveal().reveal('.reveal_footer', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+  
+    ScrollReveal().reveal('.zoom', {duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale: 0.65});
+  </script>
+
+</body>
+</html>

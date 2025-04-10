@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Bar</title>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body id="page-top">
+  <!--Navbar-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#page-top">
+          <img class="animate__animated animate__tada" src="../img/logo.png" width="90px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="spazioNav"></div>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a id="default" class="nav-link active" aria-current="page" href="#page-top">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prenotazione.html">PRENOTA</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">CONTATTI</a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!--Menu Cocktail-->
+    <div><h3 class="reveal">I nostri cocktail:</h3></div>
+    <div id="carousel1" class="carousel slide reveal" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                <source class="d-block w-100" src="video/margarita-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/margarita-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>MARGARITA</h3>
+              <p>
+                Grande classico dalle misteriose origini, il Margarita è un cocktail 
+                after dinner a base di tequila, ideale da sorseggiare dopo cena in una serata in compagnia, 
+                o come drink da aperitivo.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                <source class="d-block w-100" src="video/mojito-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/mojito-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>MOJITO</h3>
+              <p>
+                Cocktail che intreccia la sua storia a quella di Cuba, anche se alcuni sostengono
+                sia stato inventato durante il proibizionismo. Con rum, zucchero di canna, soda e menta, 
+                è uno dei drink più famosi al mondo.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                <source class="d-block w-100" src="video/cosmopolitan-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/cosmopolitan-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>COSMOPOLITAN</h3>
+              <p>
+                Drink icona negli Stati Uniti e nel mondo, il Cosmopolitan è un classico intramontabile,
+                nato negli anni '90 a New York. Un'elegante fusione di Gin, Cointreau, 
+                succo di limone e sciroppo di lamponi.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                  <source class="d-block w-100" src="video/martini-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/martini-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>DRY MARTINI</h3>
+              <p>
+                Negli anni '50 il Dry Martini passa dall'essere una ricetta, a uno stile di tendenza.
+                Ghiacciato, secco e dal forte tenore alcolico, è il marchio di fabbrica di James Bond.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                <source class="d-block w-100" src="video/paloma-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/paloma-sm.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-caption d-sm-block">
+              <h3>PALOMA</h3>
+              <p>
+                Il Paloma cocktail è un drink messicano fresco e fruttato a base di tequila, 
+                succo di lime e soda al pompelmo. Si tratta di un classico cocktail da aperitivo, 
+                molto popolare in Messico.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <br>
+    <br>
+    <!--Menu Appetizer-->
+    <div><h3 class="reveal">Gli appetizer:</h3></div>
+    <div id="carousel2" class="carousel slide reveal" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="opacity">
+              <video autoplay muted loop id="video-lg">
+                <source class="d-block w-100" src="video/formaggi-lg.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop id="video-sm">
+                <source class="d-block w-100" src="video/formaggi-sm.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="carousel-caption d-sm-block">
+            <h3>MIX DI FORMAGGI</h3>
+            <p>
+              Pecorino romano, Asiago, Grana padano o Parmigiano Reggiano. Lasciati sorprendere 
+              dal gusto del nostro tagliere di formaggi, per un aperitivo ricco di sapori nostrani.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="opacity">
+            <video autoplay muted loop id="video-lg">
+              <source class="d-block w-100" src="video/toastit-lg.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop id="video-sm">
+              <source class="d-block w-100" src="video/toastit-sm.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-caption d-sm-block">
+            <h3>TOAST-IT!</h3>
+            <p>
+              Voglia di un aperitivo ricco di gusto, ma equilibrato? Prova i nostri toast salati,
+              a base di verdure, patè e salumi della tradizione.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="opacity">
+            <video autoplay muted loop id="video-lg">
+              <source class="d-block w-100" src="video/pizza-lg.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop id="video-sm">
+              <source class="d-block w-100" src="video/pizza-sm.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-caption d-sm-block">
+            <h3>PIZZA FANTASIA</h3>
+            <p>
+              Se oggi non vuoi accettare compromessi e lasciarti andare, la nostra pizza fa per te:  
+              24 ore di lievitazione, impasto a base di farine non raffinate e condimenti Gourmet. 
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="opacity">
+            <video autoplay muted loop id="video-lg">
+              <source class="d-block w-100" src="video/bocconcini-lg.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop id="video-sm">
+              <source class="d-block w-100" src="video/bocconcini-sm.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="carousel-caption d-sm-block">
+            <h3>BOCCONCINI DELIZIA</h3>
+            <p>
+              Sfiziosi, delicati, ma ricchi di gusto: i bocconcini del nostro menù sapranno soprenderti.
+              Provali in tutte le loro varianti, dal pollo alle mandorle, alle alette al curry.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </main>
+  <footer class="bg-dark text-center text-white">
+    <hr>
+    <div class="container p-4">
+      <section class="mb-4">
+        <h5>Seguici sui nostri Social Network, ti aspettiamo!</h5>
+      </section>
+      <!-- Sezione Social -->
+      <section class="mb-4 footer-icon">
+        <a class="btn m-1" href="#!" id="immagini_doppie">
+          <img src="../img/fb_yellow.png" width="50%" id="no-hover">
+          <img src="../img/fb-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1" href="#!" id="immagini_doppie">
+          <img src="../img/ig_yellow.png" width="50%" id="no-hover">
+          <img src="../img/ig-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1" href="#!" id="immagini_doppie">
+          <img src="../img/tw_yellow.png" width="50%" id="no-hover">
+          <img src="../img/tw-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1" href="#!" id="immagini_doppie">
+          <img src="../img/tr_yellow.png" width="50%" id="no-hover">
+          <img src="../img/tr-original.png" width="50%" id="mouse-hover">
+        </a>
+      </section>
+    </div>
+    <!-- 
+    <div class="row container-fluid" id="footer-text">
+      <div class="col-lg-6">
+        © 2022 Copyright:
+        <a class="text-white" >AleBiaggio Cirus</a>
+      </div>
+      <div class="col-lg-6">
+        Sei un admin? Effettua il <a href="login.html">Login</a>   
+      </div>
+    </div> 
+    -->
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500});
+  </script>
+</body>
+</html>

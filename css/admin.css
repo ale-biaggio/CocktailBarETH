@@ -1,0 +1,221 @@
+body{
+    padding-top: 30px;
+}
+.log-failed body{
+    margin: 0;
+    padding: 0;
+}
+.log-failed .box{
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border: 3px solid #caa015;
+    border-radius: 20px;
+}
+.log-failed .logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.log-failed h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.log-failed p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.log-failed a{
+    color: #caa015;
+}
+
+h1{
+    font-size: 70px;
+    padding-top: 80px;
+    text-align: center;
+}
+h3{
+    text-align: left;
+}
+span{
+    color: #caa015;
+    font-style: italic;
+}
+.card{
+    width: 350px;
+    background-color: transparent;
+    border: 2px solid #caa015;
+    border-radius: 30px;
+}
+h5{
+    text-align: left;
+}
+.header{
+    font-weight: bold;
+    color: #caa015;
+}
+#cestino-img{
+    width: 25px;
+    height: 25px;
+}
+#cestino-div{
+    border-top: 2px solid #caa015;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 340px;
+}
+.cestino-btn{
+    background-color: transparent;
+    border: none;
+}
+#id{
+    display: none;
+}
+#cestino-img:hover, #tasto_plus:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+#tasto_plus{
+    background-color: #caa015;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+.sottotitolo{
+    padding-top: 50px;
+}
+
+.col-md-4{
+    padding-top: 25px;
+}
+
+#modalLabel{
+    color:black;
+}
+.form-label{
+    color:black;
+}
+label.error{
+    color:#ff0000;
+}
+
+.btn-primary {
+    background-color: #caa015;
+    border-color: #caa015;
+}
+.btn-primary:hover {
+    background-color: #ecbb1a;
+    border-color: #caa015;
+}
+
+.logo{
+    margin: 0 auto;
+}
+
+.modal-content{
+    background-color: #182026;
+    border: solid 2px;
+    border-color: #caa015;
+}
+
+.form-label, #modalLabel{
+    color: white;
+}
+#close{
+    background-color: #caa015;
+    border-radius: 30px;
+}
+
+.modal-footer{
+    border-top: none;
+    justify-content: center;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-content{
+    text-align: center;
+    border-radius: 30px;
+}
+
+.form-select:disabled {
+    background-color: #7c7c7c;
+}
+
+.modal-footer{
+    font-size: 20px;
+}
+
+.header-nav{
+    color: white;
+}
+.header-nav:hover{
+    color: #caa015;
+}
+
+ul{
+    margin: 0 auto;
+}
+li{
+    margin: auto 0;
+}
+
+@media (max-width: 767px){
+    h1{
+        font-size: 45px;
+    }
+    .card{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .card-title{
+        font-size: 17px;
+    }
+    .header{
+        font-size: 17px;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+    .card{
+        width: 230px;
+    }
+    .card-title{
+        font-size: 13px;
+    }
+    .header{
+        font-size: 13px;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .card{
+        width: 300px;
+    }
+    .card-title{
+        font-size: 17px;
+    }
+    .header{
+        font-size: 17px;
+    }
+}

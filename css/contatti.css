@@ -1,0 +1,79 @@
+main{
+    padding-top: 150px;
+}
+.contatti-col{
+    display: inline-block;
+    text-align: center;
+}
+#immagini_doppie{
+    text-align: center;
+}
+#mouse-hover{
+    display: none;
+}
+#immagini_doppie:hover #no-hover{
+    display: none;
+}
+#immagini_doppie:hover #mouse-hover{
+    display: inline-block;
+}
+.contatti-col h4{
+    padding-top: 20px;
+}
+#navbarToggler{
+    text-align: center;
+}
+.foto-nostre{
+    width: 100%;
+}
+/*media queries smartphone*/
+@media (max-width: 767px){
+    /*mappa*/
+    h4{
+        font-size: 20px;
+    }
+    .div-gab{
+        padding-top: 20px;
+    }
+    .foto-nostre{
+        width: 60%;
+    }
+    .contatti-col iframe{
+        width: 350px;
+        height: 250px;
+    }
+    .contatti-col h3{
+        padding-top: 5px;
+    }
+
+    /*footer*/
+    .mb-4{
+        display: flex;
+        display: inline-block;
+    }
+    .mb-4 a{
+        padding: 4px;
+    }
+}
+/* media queries tablet */
+@media (min-width: 768px) and (max-width: 992px){
+    /*mappa*/
+    .contatti-col iframe{
+        width: 350px;
+        height: 430px;
+    }
+
+    /*footer*/
+    .mb-4{
+        display: flex;
+        display: inline-block;
+    }
+    .mb-4 a{
+        padding: 4px;
+    }
+
+    /*nomi insta*/
+    .contatti-col h4{
+        font-size: 20px;
+    }
+}

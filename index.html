@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Bar</title>
+    <!--Js di bootstrap-->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!--Script ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!--CSS di bootstrap-->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <!--CSS animazioni-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body id="page-top">
+  <!--Navbar e slogan-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#page-top">
+          <img class="animate__animated animate__tada" src="../img/logo.png" width="90px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="spazioNav"></div>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a id="default" class="nav-link active" aria-current="page" href="#page-top">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prenotazione.html">PRENOTA</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">CONTATTI</a>
+            </li>
+          -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 reveal" id="slogan">
+          <h1>Bite<span>01</span></h1>
+          <h2>Vieni a scoprirci, un bite alla volta.</h2>
+        </div>
+        <div class="col-xl-5 slogan-img zoom" id="immagini_doppie">
+          <img src="../img/logodef-senzamozzico.png" id="no-hover">
+          <img src="../img/logoneon.png" id="mouse-hover">
+        </div>
+      </div>
+    </div>
+    <hr id="hr-slogan">
+  </header>
+  <main>
+    <!--Descrizioni locale-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 strip-col-text reveal">
+          <h2>Location</h2>
+          <p> 
+            Il nostro locale si trova nel centro storico della città, 
+            a due passi dal divertimento e immerso in un’oasi di relax. 
+            Puoi raggiungerci comodamente dalla metro, o puoi usufruire di un comodo parcheggio interno.
+          </p>
+          <a href="contatti.html"><button class="my-btn" type="button" id="dove-siamo-btn">DOVE SIAMO</button></a>
+        </div>
+        <div class="col-md-5 strip-col-img reveal">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/location-sm.png">
+              <source media="(min-width: 768px)" srcset = "img/location-lg.jpg">
+              <img src="img/location-lg.jpg"/>
+          </picture>       
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row flex-wrap-reverse reveal">
+        <div class="col-md-5 strip-col-img">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/drink-sm.png">
+              <source media = "(min-width: 768px)" srcset = "img/drink-lg.png">
+              <img src="img/drink-lg.png"/>
+          </picture > 
+        </div>
+        <div class="col-md-7 strip-col-text reveal" id="food-text">
+          <h2>Food&Drink</h2>
+          <p> 
+            Offriamo ai nostri clienti una vasta scelta di cocktail e appetizer. 
+            Puoi venire a trovarci per l’aperitivo, per cena, o fino a tarda notte.
+            Lasciati sorprendere dal nostro menù, dove troverai drink dai grandi classici alle ultime novità.
+          </p>
+          <a href="menu.html"><button class="my-btn" type="button" id="menu-btn">MENU</button></a>         
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 strip-col-text reveal">
+          <h2>MyPrenota</h2>
+          <p> 
+            Al Bite01, puoi scegliere il tavolo che più ti piace secondo le tue preferenze: 
+            il nostro sistema avanzato ti consente in fase di prenotazione di scegliere 
+            il tuo preferito con un solo click. 
+          </p>
+          <a href="prenotazione.html"><button class="my-btn" type="button" id="prenota-btn">PRENOTA</button></a>
+        </div>
+        <div class="col-md-5 strip-col-img reveal">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/prenota-sm.png">
+              <source media = "(min-width: 768px)" srcset = "img/prenota-lg.png">
+              <img src="img/prenota-lg.png"/>
+          </picture >         
+        </div>
+      </div>
+    </div> 
+  </main>
+  <!--Footer-->
+  <footer class="bg-dark text-center text-white">
+    <hr>
+    <div class="container p-4">
+      <section class="mb-4 reveal_footer">
+        <h5>Seguici sui nostri Social Network, ti aspettiamo!</h5>
+      </section>
+      <!-- Sezione Social -->
+      <section class="mb-4 footer-icon">
+        <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+          <img src="img/fb_yellow.png" width="50%" id="no-hover">
+          <img src="img/fb-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+          <img src="img/ig_yellow.png" width="50%" id="no-hover">
+          <img src="img/ig-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+          <img src="img/tw_yellow.png" width="50%" id="no-hover">
+          <img src="img/tw-original.png" width="50%" id="mouse-hover">
+        </a>
+        <a class="btn m-1 reveal_footer" href="#!" id="immagini_doppie">
+          <img src="img/tr_yellow.png" width="50%" id="no-hover">
+          <img src="img/tr-original.png" width="50%" id="mouse-hover">
+        </a>
+      </section>
+    </div>
+    <!-- 
+    <div class="row container-fluid" id="footer-text">
+      <div class="col-lg-6">
+        © 2022 Copyright:
+        <a class="text-white" >AleBiaggio Cirus</a>
+      </div>
+      <div class="col-lg-6">
+        Sei un admin? Effettua il <a href="login.html">Login</a>   
+      </div>
+    </div> 
+  -->
+  </footer>
+
+<script>
+  ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500});
+
+  ScrollReveal().reveal('.reveal_footer', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+
+  ScrollReveal().reveal('.zoom', {duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 500, scale: 0.65});
+</script>
+</body>
+</html>

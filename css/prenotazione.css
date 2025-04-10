@@ -1,0 +1,209 @@
+main{
+    padding-top: 130px;
+}
+.row{
+    margin-top: 10px;
+}
+h1{
+    text-align: center; 
+    font-size: 60px;
+}
+p{
+    text-align: center; 
+    font-size: 20px;
+}
+.prenotazione-col{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.piantina{
+    background-color:white;
+    border-radius: 40px;
+    border: solid 5px;
+    border-color:rgba(202, 160, 21, 0.7);
+    width: 460px;
+    height: 460px;
+    display: grid;
+    padding: 20px;
+    margin-top: 50px;
+}
+#piant_2{
+    display: none;
+}
+
+a:hover,a{
+    text-decoration: none;
+    color: white;
+}
+.rett-vert span{
+    position: relative;
+    top: 25px;
+}
+.rett-oriz span{
+    position: relative;
+    top: 10px;
+}
+.cerc span{
+    position: relative;
+    top: 13px;
+}
+/*TAVOLI*/
+.rett-vert{
+    background-color: #caa015;
+    border-radius: 10px; 
+    width: 50px;
+    height: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+.rett-oriz{
+    background-color: #caa015;
+    border-radius: 10px; 
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+.cerc{
+    background-color: #caa015;
+    border-radius: 100px; 
+    width: 50px;
+    height: 50%;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+.grigio{
+    background-color: grey;
+    cursor: default;
+    pointer-events: none;
+}
+.active.rett-vert:hover:not(.grigio),.active.rett-oriz:hover:not(.grigio), 
+.active.cerc:hover:not(.grigio){
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+.bancone{
+    background-color: #901111;
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+}
+.bancone span{
+    position: relative;
+    top: 20px;
+}
+
+.blur{
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+}
+
+#immagini_doppie{
+    text-align: center;
+}
+#mouse-hover{
+    display: none;
+}
+#immagini_doppie:hover #no-hover{
+    display: none;
+}
+#immagini_doppie:hover #mouse-hover{
+    display: inline-block;
+}
+#navbarToggler{
+    text-align: center;
+}
+#myForm{
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+input{
+    border-radius: 30px;
+}
+#prenota-btn{
+    text-align: left;
+}
+#reset-btn{
+    text-align: end;
+}
+#reset-btn button{
+    background-color: transparent;
+    border: 4px solid red;
+}
+#reset-btn button:hover{
+    background-color: red;
+}
+footer{
+    padding-top: 100px;
+}
+
+label.error{
+    color:#caa015;
+}
+
+/* media queries smartphone */
+@media (max-width: 500px){
+    .piantina{
+        margin-top: 20px;
+    }
+    #myForm{
+        padding-top: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+    #dispo-btn,#reset-btn{
+        font-size: 20px;
+    }
+    #data,#ora{
+        width: 100px;
+    }
+    hr{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .footer-icon{
+        display: flex;
+        display: inline-block;
+    }
+    .footer-icon a{
+        padding: 4px;
+    }
+}
+@media (min-width: 500px) and (max-width: 767px){
+    hr{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .footer-icon{
+        display: flex;
+        display: inline-block;
+    }
+    .footer-icon a{
+        padding: 4px;
+    }
+}
+
+/* media queries tablet */
+@media (min-width: 767px) and (max-width: 992px){
+    hr{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .footer-icon{
+        display: flex;
+        display: inline-block;
+    }
+}
